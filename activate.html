@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Activate Now</title>
+		<title>Subscribe</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-					  <h1>&nbsp;</h1>
+					  <h1>Subscribe and Save</h1>
 					  <p>&nbsp;</p>
                     </header>
 
@@ -35,71 +35,20 @@
 					<div class="container">
 						<header class="major">
 							<h2><ul class="icons labeled">
-	<li><span class="icon solid fa-toggle-on">  Activate</h2>
+	<li><span class="icon solid fa-tag">  $69 per month</h2>
 						 
-	  <p>Almost there!</p>
+											<p>Heads Up:</p>
 								</header>
 						
-								<form action="https://api.staticforms.xyz/submit" method="post">
-        <div class="row">
-							<div class="col-6 col-12-mobilep">
-							  <input name="name" type="text" required="required" placeholder="Name" autocomplete="on" />
-								
-								 	&nbsp;
-							</div>
-							<div class="col-6 col-12-mobilep">
-							  <input name="email" type="email" required="required" placeholder="Email" autocomplete="on" />
-								
-									
-							</div>
-							<div class="col-12">
-							 <input name="$SIM Card" type="text" required="required" id="$SIM Card" placeholder="SIM Card Number" autocomplete="on" />
-								
-								
-							
-											&nbsp;
-											
-								
-								<select name="$Referral" id="demo-category">
-														<option value="">- How Did You Find Us -</option>
-														<option value="1">Instagram</option>
-														<option value="1">Facebook</option>
-														<option value="1">Kijiji</option>
-														<option value="1">Friends/Family</option>
-									<option value="1">CBC Article</option>
-														<option value="1">Other</option>
-													</select>
-								
-								&nbsp;
-								
-								
-											 <input name="$Optional" type="text"id="$Optional
-" placeholder="Optional Feedback or Question" autocomplete="on" />
-								
-								
-							
-											&nbsp;
-								
-        <input type="text" name="honeypot" style="display:none">
-        <input type="hidden" name="accessKey" value="bb568762-ecef-4e29-93da-17a59d729b65">
-        <input type="hidden" name="subject" value="Activate" />
-        <input type="hidden" name="replyTo" value="@">
-        <input type="hidden" name="redirectTo" value="teligig.com/subscribe">
-       
-											
-											<div class="col-12">
-								<ul class="actions special">
-									
-								  <input type="submit" value="Continue to Payment" />
-    </form>
-								
 				
 						
 						
 						
 						
-	
+						
+	<p>Once your payment is recieved we will start working on activating your account. This is not an automatic process and can take up to a few business hours. We will send you and email letting you know when you can insert the sim card into your device.&nbsp; &nbsp; &nbsp;</p>
 							
+			&nbsp;
 						  </header>
 						
 									
@@ -110,7 +59,29 @@
 								
 								 
 								 
-						
+								 
+				<div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AaX-S4y5iffsns4rFmEWgHS40lGj7W8XJMBA_i4a0aVNuO5lOuSbUCAnh9cSD8UTTiYW14eu9TjBUoZk&vault=true" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'black',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          'plan_id': 'P-4B554891KG551115PL5ZIPAA'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID);
+      }
+  }).render('#paypal-button-container');
+</script>
+								 
+								 
 								 
 								 
 								 
@@ -137,7 +108,7 @@
 							
     
 					
-					  </section>
+						</section>
 						
 						
 					</footer>
@@ -145,13 +116,13 @@
 			</div>
 
 		<!-- Scripts -->
-	  <script src="assets/js/jquery.min.js"></script>
-	  <script src="assets/js/jquery.scrollex.min.js"></script>
-	  <script src="assets/js/jquery.scrolly.min.js"></script>
-	  <script src="assets/js/browser.min.js"></script>
-	  <script src="assets/js/breakpoints.min.js"></script>
-	  <script src="assets/js/util.js"></script>
-	  <script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-</body>
+	</body>
 </html>
