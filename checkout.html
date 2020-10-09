@@ -35,10 +35,10 @@
 					<div class="container">
 						<header class="major">
 							<h2><ul class="icons labeled">
-	<li><span class="icon solid fa-tag">  $59<span class="label">Visual Voicemail</span></span></li>
+	<li><span class="icon solid fa-tag">  $29<span class="label">Visual Voicemail</span></span></li>
 								- Processing Fee </h2>
 						 
-											<p>What's included:</p>
+	<p>What's included:</p>
 								</header>
 						
 				
@@ -63,9 +63,7 @@
 										
 										
 								
-								 
-								 
-							<div id="smart-button-container">
+						<div id="smart-button-container">
       <div style="text-align: center;">
         <div id="paypal-button-container"></div>
       </div>
@@ -76,7 +74,7 @@
       paypal.Buttons({
         style: {
           shape: 'rect',
-          color: 'silver',
+          color: 'white',
           layout: 'vertical',
           label: 'paypal',
           
@@ -84,7 +82,7 @@
 
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"CAD","value":66.67,"breakdown":{"item_total":{"currency_code":"CAD","value":59},"shipping":{"currency_code":"CAD","value":0},"tax_total":{"currency_code":"CAD","value":7.67}}}}]
+            purchase_units: [{"description":"Processing Fee","amount":{"currency_code":"CAD","value":32.77,"breakdown":{"item_total":{"currency_code":"CAD","value":29},"shipping":{"currency_code":"CAD","value":0},"tax_total":{"currency_code":"CAD","value":3.77}}}}]
           });
         },
 
@@ -101,7 +99,14 @@
     }
     initPayPalButton();
   </script>
-								 
+						
+						
+						
+						
+						
+						
+						
+						
 								 
 								 
 								 
