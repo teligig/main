@@ -59,9 +59,8 @@
 								
 								 
 								 
-								 
-				<div id="paypal-button-container"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=AaX-S4y5iffsns4rFmEWgHS40lGj7W8XJMBA_i4a0aVNuO5lOuSbUCAnh9cSD8UTTiYW14eu9TjBUoZk&vault=true" data-sdk-integration-source="button-factory"></script>
+			<div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AUsBpz42uCkJR05cNioLD3n9_yWVwndK0e8MPbAuI3kib_WYomBNAQqHeRQX__eq7UCH9nuVeRib2_t2&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
 <script>
   paypal.Buttons({
       style: {
@@ -72,7 +71,7 @@
       },
       createSubscription: function(data, actions) {
         return actions.subscription.create({
-          'plan_id': 'P-79K62262AA759981TL6AMZLA'
+          'plan_id': 'P-4WB019605B0997602L6R7UVY'
         });
       },
       onApprove: function(data, actions) {
