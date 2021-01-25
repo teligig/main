@@ -60,14 +60,12 @@
 									
 					
 					
-										
-										
 				<div id="smart-button-container">
       <div style="text-align: center;">
         <div id="paypal-button-container"></div>
       </div>
     </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=AUsBpz42uCkJR05cNioLD3n9_yWVwndK0e8MPbAuI3kib_WYomBNAQqHeRQX__eq7UCH9nuVeRib2_t2&currency=CAD" data-sdk-integration-source="button-factory"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=ASs_q48cG2t8-Zn_OHejhU98TQ78vNsn715JWAPh926r2nJzcxRhMEGEnS412AdAmZW56S94Jx5fCUas&currency=CAD" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
       paypal.Buttons({
@@ -75,13 +73,13 @@
           shape: 'rect',
           color: 'white',
           layout: 'vertical',
-          label: 'paypal',
+          label: 'pay',
           
         },
 
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"description":"Processing Fee","amount":{"currency_code":"CAD","value":32.77,"breakdown":{"item_total":{"currency_code":"CAD","value":29},"shipping":{"currency_code":"CAD","value":0},"tax_total":{"currency_code":"CAD","value":3.77}}}}]
+            purchase_units: [{"description":"Limitless Data Plan (SIM CARD)","amount":{"currency_code":"CAD","value":29}}]
           });
         },
 
